@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,6 @@
 
     <!-- Link to an external stylesheet (CSS) file -->
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <!--icon on top of the browser-->
     <link rel="icon" type="image/png" href="logo.png">
     <!--link for the search icon-->
@@ -18,9 +16,11 @@
     <!--profile icon link-->
     <script src="https://kit.fontawesome.com/85b6a0f764.js" crossorigin="anonymous"></script>
     <!--best selling font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
     <!--content font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
    
@@ -67,14 +67,12 @@
 
             <form class="search-container" id="search-container">
                 <input type="text" name="search" id="search-input" placeholder="search" autocomplete="off" >
-                <button id= search-button-inside class ="fa fa-search"onclick="search()"></button>
+                <button id= search-button-inside class ="fa fa-search" onclick="search()"></button>
             </form>
             
             <!--profile-->
-            <a href="profile.html">
-                <button class="profile">
-                    <i class="fa-regular fa-user"  ></i>
-                </button>
+            <a class = "profile" href="login.html">
+                <i class="fa-regular fa-user" style="font-size:30px" ></i>
             </a>
             
         </div>
@@ -86,13 +84,13 @@
         <div class="slideshow-container">
             <!-- Define individual slides with images and captions -->
             <div class="mySlides fade">
-                <img src="slideshow/bag picture 1.jpg" alt="Seasonal Bags" title="Seasonal Bags">
+                <img src="slideshow/bag_picture_1.jpg" alt="Seasonal Bags" title="Seasonal Bags">
             </div>
             <div class="mySlides fade">
-                <img src = "slideshow/bag picture 2.jpg" alt = "Fall Bags" title="Fall Bags">
+                <img src = "slideshow/bag_picture_2.jpg" alt = "Fall Bags" title="Fall Bags">
             </div>
             <div class="mySlides fade">
-                <img src = "slideshow/bag picture 3.jpg" alt = "Red Bags" title="Red Bags">
+                <img src = "slideshow/bag_picture_3.jpg" alt = "Red Bags" title="Red Bags">
             </div>
         </div>
         
@@ -111,16 +109,16 @@
     </main>
 
     <aside>
-        <h1>Best Sellers</h1>
+        <h2>Best Sellers</h2>
         <div class="bag-options">
             <div class="bag-container">
                 <button type="button" id="bag1-button">
-                    <img src="products/bag 1.png" class="bag1" alt="black shoulder bag" style="width:300px; height:auto;">
+                    <img src="products/bag_1.png" class="bag1" alt="black shoulder bag" style="width:300px; height:auto;">
                 </button>
                 <div class="bag-1-content">
                     <p>Black Shoulder Bag </p><br>
                     <p>From: SGD 40</p>
-                    <div id="stars">
+                    <div class="stars">
                         <i class="fa-solid fa-star" style="color: #fff000;"></i>
                         <i class="fa-solid fa-star" style="color: #fff000;"></i>
                         <i class="fa-solid fa-star" style="color: #fff000;"></i>
@@ -136,12 +134,12 @@
     
             <div class="bag-container">
                 <button type="button" id="bag2-button">
-                    <img src="products/bag 2.png" class="bag2" alt="black snake skin baguette bag" style="width:300px; height:auto;">
+                    <img src="products/bag_2.png" class="bag2" alt="black snake skin baguette bag" style="width:300px; height:auto;">
                 </button>
                 <div class="bag-2-content">
                     <p>Black Snake Skin Baguette Bag </p><br>
                     <p>From: SGD 40</p>
-                    <div id="stars">
+                    <div class="stars">
                         <i class="fa-solid fa-star" style="color: #fff000;"></i>
                         <i class="fa-solid fa-star" style="color: #fff000;"></i>
                         <i class="fa-solid fa-star" style="color: #fff000;"></i>
@@ -156,12 +154,12 @@
 
             <div class="bag-container">
                 <button type="button" id="bag3-button">
-                    <img src="products/bag 3.png" class="bag3" alt="Black Ruffle Bag" style="width:400px; height:auto;">
+                    <img src="products/bag_3.png" class="bag3" alt="Black Ruffle Bag" style="width:400px; height:auto;">
                 </button>
                 <div class="bag-3-content">
                     <p>Black Ruffle Bag </p><br>
                     <p>From: SGD 40</p>
-                    <div id="stars">
+                    <div class="stars">
                         <i class="fa-solid fa-star" style="color: #fff000;"></i>
                         <i class="fa-solid fa-star" style="color: #fff000;"></i>
                         <i class="fa-solid fa-star" style="color: #fff000;"></i>
@@ -195,16 +193,17 @@
 
         <div class="bottom-page">
             <ul class="shop-list">
-                <a href="index.html"><button>Shop</button></a><br>
-                <button>Shop All</button><br>
-                <button>Best Sellers</button><br>
-                <button>Back In Stock</button><br>
-                <button>Shoulder Bags</button>
+                <li class = "SHOP"><a href="index.html">Shop</a></li>
+                <li><a href="#">Shop All</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Back In Stock</a></li>
+                <li><a href="#">Shoulder Bags</a></li>
             </ul>
+            
 
             <ul class="about-list">
-                <button >About</button><br>
-                <button class="contact-us">Contact Us</button>
+                <li class = "ABOUT"><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
 
             <div class = "footer-logo">
@@ -228,8 +227,23 @@
                     </a>
                 </div>
             </div>
+            <br><hr class = "break-line">
+            <p class = "country-region">Country / Region</p>
+            <div class="custom-dropdown">
+                <select class = "country-button">
+                    <option value="Singapore">Singapore | SGD </option>
+                    <option value="Singapore">Malaysia | MYR </option>
+                    <option value="Singapore">USA | USD </option>
+                    <option value="Singapore">China | YUAN </option>
+                </select>
+            </div>
+            <div class="credit-cards">
+                <i class="fa-brands fa-cc-visa" id="credit-intervals" style="color: #fafafa; font-size:30px;"></i>
+                <i class="fa-brands fa-cc-mastercard"  id="credit-intervals" style="color: #ffffff; font-size:30px;"></i>
+                <i class="fa-brands fa-cc-amex"  id="credit-intervals" style="color: #ffffff; font-size:30px;"></i>
+            </div>
+            <br><p style="margin-top:50px;">&copy; 2023 The Ronans. All rights reserved.</p>
         </div>
-        <br><p>&copy; 2023 The Ronans. All rights reserved.</p>
     </footer>
 </body>
 
