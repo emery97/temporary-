@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--sets the title on the browser-->
+    <title>The Ronans</title>
+
+    <!-- Link to an external stylesheet (CSS) file -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!--icon on top of the browser-->
+    <link rel="icon" type="image/png" href="logo.png">
+    <!--link for the search icon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--profile icon link-->
+    <script src="https://kit.fontawesome.com/85b6a0f764.js" crossorigin="anonymous"></script>
+    <!--best selling font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <!--content font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+    <header>
+        <div class = "sale-bar">
+            <h3>12.12 SALE!! 30% OFF ENTIRE WEBSITE</h3>
+        </div>
+    </header>
+    <nav>
+         <!-- Create a top navigation bar with links and dropdown menu -->
+         <div class="topnav">
+            <!-- Insert logo image -->
+            <div class = "logo">
+                <a href="index.html"> <img class = "logo-size" src="logo.png" alt="The Ronans" > </a>
+                <div style="clear: both;"></div>
+            </div>
+            <!-- Define navigation links and dropdown -->
+            <div class="topnav" >
+                <a href="index.html" >Home</a>
+                <a href="collections">Collections</a>
+
+                <!-- Dropdown menu -->
+                <div class="dropdown" >
+                    <button class="dropbtn">Shop</button>
+                    <div class="dropdown-content">
+                        <a href="shop-all">Shop All</a>
+                        <a href="best-sellers">Best Sellers</a>
+                        <a href="back-in-stock">Back in Stock</a>
+                        <a href="shoulder-bags">Shoulder Bags</a> 
+                    </div>
+                </div>
+                <a href="about-us">About Us</a>
+                <a href="sale">Sale</a>
+            </div>
+ 
+            <!--search bar-->
+            <button type="button" class="search-button" id="toggleButton" onclick="toggleSearchBar()" >
+                <i class="fa fa-search" style = "font-size:30px"></i>
+            </button>
+
+            <form class="search-container" id="search-container">
+                <input type="text" name="search" id="search-input" placeholder="search" autocomplete="off" >
+                <button id= search-button-inside class ="fa fa-search"onclick="search()"></button>
+            </form>
+            
+            <!--profile-->
+            <a href="profile.html">
+                <button class="profile">
+                    <i class="fa-regular fa-user"  ></i>
+                </button>
+            </a>
+            
+        </div>
+    </nav>
+
+    <!-- main content sections -->
+    <main>
+        <!-- Create a picture slideshow with controls -->
+        <div class="slideshow-container">
+            <!-- Define individual slides with images and captions -->
+            <div class="mySlides fade">
+                <img src="bag picture 1.jpg" alt="Seasonal Bags" title="Seasonal Bags">
+            </div>
+            <div class="mySlides fade">
+                <img src = "bag picture 2.jpg" alt = "Fall Bags" title="Fall Bags">
+            </div>
+            <div class="mySlides fade">
+                <img src = "bag picture 3.jpg" alt = "Red Bags" title="Red Bags">
+            </div>
+        </div>
+        
+        <!--previous and next buttons-->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a> 
+
+        <!-- Add slide indicator dots and associated script -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script src = "script.js"></script>
+        
+    </main>
+
+    <aside>
+        <h1>Best Sellers</h1>
+        <div class="bag-options">
+            <div class="bag-container">
+                <button type="button" id="bag1-button">
+                    <img src="bag 1.png" class="bag1" alt="black shoulder bag" style="width:300px; height:auto;">
+                </button>
+                <div class="bag-1-content">
+                    <p>Black Shoulder Bag </p><br>
+                    <p>From: SGD 40</p>
+                    <div id="stars">
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <p>(5)</p>
+                    </div>
+                    <div class="choose-options-location">
+                        <button  class="choose-options-button">Chooose Options</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="bag-container">
+                <button type="button" id="bag2-button">
+                    <img src="bag 2.png" class="bag2" alt="black snake skin baguette bag" style="width:300px; height:auto;">
+                </button>
+                <div class="bag-2-content">
+                    <p>Black Snake Skin Baguette Bag </p><br>
+                    <p>From: SGD 40</p>
+                    <div id="stars">
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <p>(10)</p>
+                    </div>
+                </div>
+                <div class="bag2-add-to-cart-location">
+                    <button  class="choose-options-button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="bag-container">
+                <button type="button" id="bag3-button">
+                    <img src="bag 3.png" class="bag3" alt="Black Ruffle Bag" style="width:400px; height:auto;">
+                </button>
+                <div class="bag-3-content">
+                    <p>Black Ruffle Bag </p><br>
+                    <p>From: SGD 40</p>
+                    <div id="stars">
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff000;"></i>
+                        <p>(9)</p>
+                    </div>
+                </div>
+                <div class="add-to-cart-location">
+                    <button  class="choose-options-button">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- view more button -->
+        <div class="button-placement">
+            <button type="button" class="view-more-button">View More</button>
+        </div>
+    </aside>
+
+    <footer>
+        <!--first half of footer - WHY THE RONANS? -->
+        <div class="why-ronans">
+            <h2>WHY THE RONANS?</h2><br>
+            <h1>Style + Utility</h1><br>
+            <p>
+                At The Ronans, we blend chic aesthetics with practical functionality in our bags. ✨<br>
+                 No more compromising between style and purpose.💗<br>
+                 Ronan Bags offer the elegance you crave without sacrificing the everyday usability you deserve.✌️ </p>
+        </div>
+
+        <div class="bottom-page">
+            <ul class="shop-list">
+                <a href="index.html"><button>Shop</button></a><br>
+                <button>Shop All</button><br>
+                <button>Best Sellers</button><br>
+                <button>Back In Stock</button><br>
+                <button>Shoulder Bags</button>
+            </ul>
+
+            <ul class="about-list">
+                <button >About</button><br>
+                <button class="contact-us">Contact Us</button>
+            </ul>
+
+            <div class = "footer-logo">
+                <a href="index.html"> <img class = "logo-size" src="logo.png" alt="The Ronans" > </a>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="social-media-icons">
+                <div class="instagram">
+                    <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram" style="color: #ffffff; font-size:20px;"></i>
+                    </a>
+                </div>
+                <div class="pinterest">
+                    <a href="https://www.pinterest.com/">
+                        <i class="fa-brands fa-pinterest" style="color: #ffffff; font-size:20px;"></i>             
+                    </a>
+                </div>
+                <div class="tiktok">
+                    <a href="https://www.tiktok.com/">
+                        <i class="fa-brands fa-tiktok" style="color: #ffffff; font-size:20px;"></i>             
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><p>&copy; 2023 The Ronans. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
