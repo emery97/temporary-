@@ -28,7 +28,16 @@ body {
     align-items: center; /* Center content vertically */
     background-color: #ECFFB0;
     height: 45px;
+    text-decoration: none;
 }
+.sale-bar h3{
+    text-decoration: none;
+    color: black;
+}
+.sale-bar a:hover h3 {
+    text-decoration: underline;
+}
+
 /* style for the logo*/
 .logo img{
     height:100px;
@@ -481,8 +490,7 @@ ul {
     cursor: pointer;
 }
 .footer-logo {
-    display: inline-block;
-    float: right;
+    float:right;
     margin-right: 90px;
 }
 .logo-size{
